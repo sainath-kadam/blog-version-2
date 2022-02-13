@@ -1,0 +1,14 @@
+ /* Create two columns that float next to eachother */
+.column1{
+  margin-right: 5em;
+  width: 50%;
+}
+.column2{
+  padding-right: 2em;
+ 
+}
+.footer{
+  float: left;
+  padding-top: 5em;
+}
+

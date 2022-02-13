@@ -1,0 +1,17 @@
+
+{% include "home_header.html" %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'new_article.css' %}">
+    
+<div class="container">
+   
+{% block content %}
+
+<h1>New article</h1>
+<form action="" method="post">{% csrf_token %}
+{{ form.as_p }}
+<button class="btn btn-success ml-Ǒ" type="submit">Save</button>
+</form>
+{% endblock content %}
+<div>
+{% include "home_footer.html" %}

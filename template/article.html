@@ -1,0 +1,14 @@
+
+{% include "home_header.html" %}
+{% block title %}articles{% endblock title %}
+{% block content %}
+<div class="jumbotron">
+<h1 class="display-Ǔ">articles web</h1>
+<p class="lead">A  website .</p>
+<p class="lead">
+<a class="btn btn-primary btn-lg" href="{% url 'article_list' %}"
+role="button">View All Articles</a>
+</p>
+</div>
+{% endblock content %}
+{% include "home_footer.html" %}

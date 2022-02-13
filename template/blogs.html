@@ -1,0 +1,25 @@
+{% include "home_header.html" %}
+
+<body>
+<div class="img">
+<img src="/static/7.jpg" style="width:100%">
+</div>
+ <div>
+     <div class="container">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+    <a class="navbar-brand" href="{% url 'article_list' %}">ARTICLES BY PEOPLE</a>
+    {% if user.is_authenticated %}
+    <ul class="navbar-nav mr-auto">
+    <span><li class="nav-item"><a href="{% url 'article_new' %}">+ Add_New</a></li></span>
+    </ul>
+    {% endif %}
+    
+    </nav>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-2">
+    <a class="navbar-brand" href="{% url 'post' %}">POSTS BY ADMIN</a>
+</nav>
+</div>
+<div class="footer">
+    {% include "home_footer.html" %}
+</div>

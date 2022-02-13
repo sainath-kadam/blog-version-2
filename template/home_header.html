@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title></title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+
+</head>
+<body>
+
+  {% if user.is_authenticated %}
+
+{% else %}
+<p>You are not logged in.</p>
+<a href="{% url 'login' %}">Log In</a>
+{% endif %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'home.css'%}"><div id="header-wrapper">
+  <div id="header" class="container">
+      <div id="logo">
+        <h1><a href="#">BLOG</a></h1>
+      </div>
+      <p>Hi! {{ user.username }}</p>
+       
+          </div><div id="menu">
+            <ul>
+              <li class=""><a href="/home" accesskey="1" title="">Home</a></li>
+              <li><a href="/blogs" accesskey="2" title="">BLOGs</a></li>
+              <li><a href="/contact" accesskey="3" title="">CONTACT</a></li>
+              <li><a href="/about" accesskey="4" title="">ABOUT </a></li>
+              <li><a href="/"<li ><button type="submit" class="btn btn-danger" >Logout</button></li></a>
+            </ul>
+          </div>
+       
+      </div>
+  

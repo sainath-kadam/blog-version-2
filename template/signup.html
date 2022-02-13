@@ -1,0 +1,16 @@
+{% include 'base_header.html' %}
+{% load static %}
+    <link rel="stylesheet" href="{% static 'signup.css' %}">
+   
+    <div class="form">
+{% block content %}
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_table }}
+    <button type="submit" class="btn btn-danger" >Sign_up</button>
+</form>
+
+{% endblock content %}
+</div>
+
+{% include 'base_footer.html' %}

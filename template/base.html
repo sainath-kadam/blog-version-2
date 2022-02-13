@@ -1,0 +1,11 @@
+{% include 'base_header.html' %}
+<div class="form">
+    <button class="btnn"><a href="{% url 'login' %}">Log_In</a></button>
+    <p> <b><br><br><br></p>
+    <button class="cn"><a href="{% url 'signup' %}">Sign_Up</a></button>
+    <p class="link">Don't have an account<br>
+    <a href="{% url 'signup' %}">Sign_Up</a>
+     </p>
+</div>
+{% include 'base_footer.html' %}
+           

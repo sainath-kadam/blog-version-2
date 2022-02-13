@@ -1,0 +1,21 @@
+{% include 'base_header.html' %}
+{% load static %}
+
+<button class="btnn"><a href="{% url 'password_change' %}">Change Password</a></button>
+<button class="cn"><a href="{% url 'password_reset' %}">Forgot Password</a></button>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+{% block content %}
+<div class='form'>
+<h2>Log_In</h2>
+<form method="post">
+{% csrf_token %}
+
+{{ form.as_p }}
+
+<button type="submit" class="btn btn-danger" >Log In</button>
+
+</form>
+</div>
+{% endblock content %}
+
+{% include 'base_footer.html' %}

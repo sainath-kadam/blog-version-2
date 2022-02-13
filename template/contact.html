@@ -1,0 +1,23 @@
+
+{% include "home_header.html" %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'contact.css'%}">
+<div class="row">
+    <div class="column1">
+        <img src="/static/3.jpg" style="width:100%">
+    </div>
+    <div class="column2"> 
+{% block content %}
+
+<form action="" method="post">{% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-danger">Submit</button>
+ 
+</form>
+</div>
+{% endblock content %}
+</div>
+<div class="footer">
+
+{% include "home_footer.html" %}
+</div>
