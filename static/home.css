@@ -37,7 +37,7 @@ ol, ul
 
 p
 {
-	line-height: 180%;
+	line-height: 150%;
 }
 
 
@@ -61,37 +61,6 @@ a:hover
 /*********************************************************************************/
 /* Image Style                                                                   */
 /*********************************************************************************/
-
-	.image
-{
-	display: ruby-base-container;
-}
-
-
-.image-full
-{
-	display:block ;
-	width: 100%;
-	margin: 0em 0em 0em 0em;
-}
-
-.image-left
-{
-	float: left;
-	margin: 0 2em 2em 0;
-}
-
-.image-centered
-{
-	display: block ;
-	margin: 0 0 2em 0;
-}
-
-.image-centered img
-{
-	margin: 0 auto;
-
-}
 
 /*********************************************************************************/
 /* List Styles                                                                   */
@@ -230,31 +199,6 @@ ul.style3 .icon
 /* Button Style                                                                  */
 /*********************************************************************************/
 
-	.button
-{
-	display: inline-block;
-	padding: 1.3em 3em;
-	background: #1B9772;
-	-moz-transition: opacity 0.25s ease-in-out;
-	-webkit-transition: opacity 0.25s ease-in-out;
-	-o-transition: opacity 0.25s ease-in-out;
-	-ms-transition: opacity 0.25s ease-in-out;
-	transition: opacity 0.25s ease-in-out;
-	letter-spacing: 0.20em;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 600;
-	color: #FFF;
-}
-
-
-
-.button-big
-{
-	padding: 1.6em 4em;
-	font-size: 1.4em;
-	font-weight: 900;
-}
 
 /*********************************************************************************/
 /* Heading Titles                                                                */
@@ -308,7 +252,7 @@ ul.style3 .icon
 {
 	position: absolute;
 	top: 0em;
-	left: 50px;
+	left: 0px;
 	width: 100%;
 }
 
@@ -388,55 +332,6 @@ ul.style3 .icon
 /* Banner                                                                        */
 /*********************************************************************************/
 	
-	#banner-wrapper
-{
-	overflow: hidden;
-	padding: 3em 0em;
-	background: #197d62;
-}
-
-#banner
-{
-	overflow: hidden;
-	width: 1000px;
-	padding: 0px 100px;
-	text-align: center;
-	color: rgba(255,255,255,.7);
-}
-
-#banner a
-{
-	color: rgba(255,255,255,.9);
-}
-
-#banner .box-left
-{
-	float: left;
-}
-
-#banner .box-right
-{
-	float: right;
-}
-
-#banner h2
-{
-	margin: 0em;
-	padding: 0em;
-	font-weight: 400;
-	font-size: 3em;
-	color: #555555;
-}
-
-#banner span
-{
-	display: block;
-	padding-top: 0.20em;
-	text-transform: uppercase;
-	font-size: 1.2em;
-	color: #A2A2A2;
-}
-
 /*********************************************************************************/
 /* Page                                                                          */
 /*********************************************************************************/
@@ -471,41 +366,7 @@ ul.style3 .icon
 /*********************************************************************************/
 /* Sidebar                                                                       */
 /*********************************************************************************/
-
-	#sidebar
-{
-	float: right;
-	width: 450px;
-}
-
-#stwo-col
-{
-	margin-top: 2em;
-}
-
-#stwo-col h2
-{
-	display: block;
-	padding-bottom: 1.5em;
-	letter-spacing: 0.10em;
-	text-transform: uppercase;
-	font-size: 1.2em;
-	font-weight: 600;
-	color: #454445;
-}
-
-#stwo-col .sbox1
-{
-	float: left;
-	width: 210px;
-}
-
-#stwo-col .sbox2
-{
-	float: right;
-	width: 210px;
-}
-
+/* 
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
@@ -585,18 +446,6 @@ ul.style3 .icon
 	color: #FFF;
 }
 
-#featured .icon
-{
-	position: relative;
-	display: inline-block;
-	width: 100px;
-	height: 100px;
-	margin: 0px auto 20px auto;
-	line-height:  100px;
-	font-size: 3em;
-	text-align: center;
-	color: #FFF;
-}
 
 .column1,  .column2,  .column3,  .column4
 {
@@ -626,125 +475,6 @@ ul.style3 .icon
 		background-size: contain;
 	}
 
-
-#slider-wrapper
-{
-	padding: 0em 0em;
-	background: #DB3256;
-}
-
-#slider
-{
-	margin: 0em auto 0em auto;
-	width: 700px;
-	position: relative;
-}
-
-
-#slider .viewer
-{
-	width: 1000px;
-	height: 375px;
-	margin: 0 auto;
-	overflow: hidden;
-}
-
-#slider .viewer .reel
-{
-	display: none;
-	height: 375px;
-}
-
-#slider .viewer .reel .slide
-{
-	position: relative;
-	width: 1000px;
-	height: 375px;
-}
-
-#slider .viewer .reel h2
-{
-	position: absolute;
-	top: 130px;
-	left: 0;
-	width: 1200px;
-	height: 80px;
-	line-height: 80px;
-	background: #111111;
-	text-align: center;
-	opacity: 0.85;
-	font-weight: normal;
-	color: #ffffff;
-	font-size: 2.25em;
-}
-
-#slider .viewer .reel p
-{
-	position: absolute;
-	top: 210px;
-	left: 0;
-	width: 1200px;
-	height: 40px;
-	line-height: 40px;
-	background: #0074C6;
-	text-align: center;
-	opacity: 0.85;
-	font-weight: normal;
-	color: #ffffff;
-	font-size: 1.1em;
-}
-
-#slider .icon
-{
-	font-size: 4em;
-	color: #FFF;
-}
-
-#slider .previous-button
-{
-	position: absolute;
-	top: 150px;
-	left: 0;
-}
-
-#slider .next-button
-{
-	position: absolute;
-	top: 150px;
-	right: 0;
-}
-
-#slider .indicator
-{
-	margin: 30px auto 0 auto;
-}
-
-#slider .indicator ul
-{
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-}
-
-#slider .indicator ul li
-{
-	display: inline-block;
-	width: 12px;
-	height: 12px;
-	text-indent: -9999em;
-	background: #c8c8c8;
-	margin: 0 2px 0 2px;
-	border-radius: 8px;
-	border-bottom: solid 1px #ffffff;
-	border-top: solid 1px #909090;
-}
-
-#slider .indicator ul li.active
-{
-	background: #505050;
-	border-top: solid 1px #505050;
-}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -854,27 +584,6 @@ ul.style3 .icon
 #extra2 #ebox2
 {
 	float: right;
-}
-.search{
-    width: 200px;
-   
-    margin-left: 24%;
-}
-
-.srch{
-    font-family: 'Times New Roman';
-    width: 130px;
-    height: 40px;
-    background: transparent;
-    border: 5px solid #0b9e79;
-    margin-top: -0.5em ;
-    color: #fff;
-    border-right: none;
-    font-size: 16px;
-    float: left;
-    padding: 0px;
-    border-bottom-left-radius: 30px;
-    border-top-left-radius: 30px;
 }
 
 .btn{
