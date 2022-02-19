@@ -1,36 +1,71 @@
 {% include "home_header.html" %}
 {% load static %}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 <link rel="stylesheet" href="{% static 'home.css'%}">
+
 <div id="header-featured"></div>
+<h1 class="text-center"> Latest_Updates </h1>
 <div id="wrapper">
+  
   <div id="featured-wrapper">
+    
     <div id="featured" class="container">
+     
       
-      <div class="column1">
-        <div class="title">
-          <h2><img src="/static/rand blogger1.jpg" alt="RAND FISHERIN" width="300" > </h2>
+     <div class="conatiner2">
+      
+        
+        <div class="row">
+          <div class="col1">
+           
+            <h2 class="text-center">Top Technology news </h2>
+            <h5>updating....... </h5>
+          {% comment %} {% for i in articles %}
+            <div class="card rounded shadow-lg m-2"  style="width: 20rem; ">
+              <img src="{{i.urlToImage}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p>{{ i.author }}</p>
+                <h5 class="card-title">{{ i.title }}</h5>
+                <p class="card-title">{{ i.source.name}}</p>
+                <p class="card-text">{{ i.description }}</p>
+                <hr>
+                <small>date: publish at: {{i.publishedAt}}</small>
+                <a href="{{i.url }}" target="_blank" class="btn btn-success m-1">Go </a>
+              </div>
+            </div>
+          {% endfor %} {% endcomment %}
+
+        </div> 
+      
+          <div class="col2">
+            
+            <h2 class="text-center">Top news </h2>
+            {% for i in results %}
+            <div class="card rounded shadow-lg m-2"  style="width: 20rem; ">
+              
+              <div class="card-body">
+                <p class="card-text">{{ i.description }}</p>
+                <hr>
+                <small>creator: {{i.creator}}</small> <br>
+                <small>date: publish at: {{i.pubDate}}</small>
+                <p class="card-country">{{ i.country}}</p>
+                <p class="card-title">{{ i.source_id}}</p>
+                <a href="{{i.link }}" target="_blank" class="btn btn-success m-1">Go </a>
+              </div>
+            </div>
+          {% endfor %}
+           
+
+          </div>
         </div>
-        <p>“if possible, build your expertise before you build your network, and build your network before you build your company.”
-          <br>― Rand Fishkin, Lost and Founder: A Painfully Honest Field Guide to the Startup World</p>
+
       </div>
-      <div class="column2">
-        <div class="title">
-          <h2><img src="/static/Arianna_Huffington_2012_Shankbone.jpg" alt="Arianna Huffington" width="250" ></h2>
-        </div> <p> “What is success? It is being able to go to bed each night with your soul at peace. —PAULO COELHO”
-         <br> ― Arianna Huffington, Thrive: The Third Metric to Redefining Success and Creating a Life of Well-Being, Wisdom, and Wonder</p>
-      </div>
-      <div class="column3">
-        <div class="title">
-          <h2><img src="/static/Peter Rojas.jpg" alt="Peter Rojas" width="210" ></h2>
-        </div>
-        <p>"A lot of problems in the world would disappare, if we talk each other instead of taking about each other"
-          <br>__Peter Rojas. Editor In Chief of GDGT and co-founder of Gizmodo and Engadget. Tech </p>
-      </div>
+    
     </div>
   </div>
   <div id="extra" class="container">
     <h1>WELCOME TO MY BLOG</h1>
-    <span> Handle by Sainath Kadam  </span>
+    <span> Handle by Sainath Kadam </span>
     <div class='container2'>
       <div>
         <img src='/static/4.jpg' class='iconDetails'>

@@ -45,6 +45,7 @@ p
 a
 {
 	color: #050505;
+	
 }
 
 a:hover
@@ -259,11 +260,12 @@ ul.style3 .icon
 #logo h1
 {
 	display: inline-block;
-	font-size: 3.5em;
+	font-size: 3em;
 	text-transform: uppercase;
-	font-weight: 1000;
-	color: #d41b53;
-	padding-top: 10px;
+	font-weight: 700;
+	color: #197d62;
+	padding-top: 18px;
+	
 }
 
 #logo span
@@ -272,9 +274,10 @@ ul.style3 .icon
 	top: 7em;
 	display: inline-block;
 	padding-left: 0em;
-	letter-spacing: 0.20em;
+	letter-spacing: 0.10em;
 	text-transform: uppercase;
 	font-size: 0.90em;
+
 }
 
 #logo a
@@ -590,7 +593,7 @@ ul.style3 .icon
     width: 70px;
     height: 40px;
     background:solid #0b9e79; ;
-    border: 2px solid #0b9e79;;
+    border: 2px solid #0b9e79;
     margin-top: -0.5em;
     color: rgb(15, 14, 14);
     font-size: 18px;
@@ -615,8 +618,9 @@ ul.style3 .icon
    
    .container2 {
 	   width:100%;
+	   
 	   height:auto;
-	   padding:2px;
+	   padding:0px;
    }
 /* Style all font awesome icons */
 .fa {
@@ -669,3 +673,19 @@ ul.style3 .icon
   #menu ul li:hover a{ color: #fff; }
   #menu ul li.active{ background-color: #000; }
   #menu ul li.active a{ color: #fff; }
+  .btn-danger {
+    color: #fff; 
+    background-color: #0b9e79;;
+    border-color: #0b9e79;; 
+}
+.col2{
+	padding-left: 55%;
+}
+.col1{
+	padding-right:80% ;
+	padding-top: 80px;
+}
+.heading{
+	padding-left:-10px;
+	padding-top: 5px;
+}
